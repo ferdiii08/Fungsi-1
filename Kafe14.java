@@ -5,7 +5,7 @@ public class Kafe14 {
     public static void Menu(String namaPelanggan, boolean isMember, int jamKunjung) {
         System.out.println("Selamat datang, " + namaPelanggan + "!");
         if (isMember) {
-            System.out.println("Anda adalah member, dapatkan diskon 10% untuk setiap pembelian")
+            System.out.println("Anda adalah member, dapatkan diskon 10% untuk setiap pembelian");
         }
         if (jamKunjung >= 14 && jamKunjung <= 16) {
             System.out.println("Happy Hour! Diskon 20% untuk semua minuman");
@@ -20,11 +20,7 @@ public class Kafe14 {
         System.out.println("===========================");
         System.out.println("Silakan pilih menu yang Anda inginkan.");
     }
-    public static main (String[] args) {
-        menu (Andi, true);
-    }
     
-
     public static int hitungTotalHarga14(int pilihanMenu, int banyakItem) {
         int[] hargaItems = {15000, 20000, 22000, 12000, 10000, 18000};
         int hargaTotal = hargaItems[pilihanMenu - 1] * banyakItem;
